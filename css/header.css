@@ -1,0 +1,117 @@
+.header {
+    background-color: #FFF8F3;
+}
+
+a {
+    text-decoration: none;
+    color: indianred;
+    font-weight: 600;
+}
+
+.menu_btn {
+    background: none; /* Убираем фон кнопки */
+    border: none; /* Убираем рамку кнопки */
+    cursor: pointer; /* Используем указатель курсора */
+    display: flex; /* Flex контейнер для полос */
+    flex-direction: column; /* Вертикальное расположение полос */
+    justify-content: center; /* Центрируем полосы */
+    height: 40px; /* Высота кнопки */
+    margin-left: auto; /* Отодвигаем кнопку вправо */
+}
+
+.menu_btn span {
+    height: 3px; /* Увеличиваем высоту полос для удобочитаемости */
+    background-color: brown; /* Цвет для бургер-меню */
+    width: 35px; /* Ширина полос */
+    margin: 3px 0; /* Отступ между полосами */
+    transition: all 0.3s; /* Плавный переход для анимации */
+}
+
+.logo_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin-right: 30px; /* Отступ права для логотипа */
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone {
+    position: relative;
+    transition: color 0.3s ease; /* Плавный переход цвета */
+}
+
+.phone::before {
+    content: url(../images/phone.svg);
+    width: 25px;
+    height: 25px;
+    left: -23px;
+    top: -2px;
+    position: absolute;
+}
+
+.header_menu {
+    order: 1; /* Устанавливаем порядок отображения */
+    display: flex; /* Отображаем меню как flex-контейнер */
+    align-items: center; /* Центровка элементов по вертикали */
+}
+
+.menu_list {
+    display: flex; /* Меню по умолчанию горизонтальное */
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем поля */
+}
+
+.menu_list_link {
+    transition: color 0.3s ease; /* Плавный переход цвета ссылок */
+}
+
+.menu_list_link:hover {
+    color: orange; /* Цвет ссылки при наведении */
+}
+
+.phone:hover {
+    color: orange; /* Цвет телефона при наведении */
+}
+
+/* Стили для адаптивности */
+@media (max-width: 768px) {
+    .menu_btn {
+        display: flex; /* Отображаем кнопку элемнента */
+    }
+
+    .menu_list {
+        display: none; /* Скрываем меню по умолчанию на мобильных */
+        flex-direction: column; /* Вертикальная ориентация */
+        position: absolute; /* absolute для меню */
+        background-color: #FFF8F3; /* Фон для открытого меню */
+        width: 100%; /* Ширина меню для переполнения */
+        top: 30%; /* Расположение под заголовком */
+        left: 85%; /* Выравнивание по левому краю */
+        z-index: 1000; /* Поверх других элементов */
+        
+    }
+
+    .header_menu_list li{
+        font-size: 12px;
+    }
+
+    .header_menu.open .menu_list {
+        display: flex; /* Показываем меню при открытии */
+    }
+    
+    .menu_btn {
+        display: flex; /* Показываем кнопку на мобильных устройствах */
+    }
+}
+
+@media (min-width: 769px) {
+    .menu_btn {
+        display: none; /* Скрываем кнопку-бургер на больших экранах */
+    }
+}

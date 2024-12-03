@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/reviews.css">
+
+</head>
+
+<body class="board-app">
+    <header class="header">
+        <div class="container header_inner">
+            <a class="logo" href="#">
+                <img class="logo_img" src="images/logo1.png" alt="">
+            </a>
+
+            <nav class="menu header_menu">
+                <button class="menu_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="menu_list header_menu_list">
+                    <li class="menu_list_item">
+                        <a class="menu_list_link" href="#">Главная</a>
+                    </li>
+                    <li class="menu_list_item">
+                        <a class="menu_list_link" href="#">Услуги и цены</a>
+                    </li>
+                    <li class="menu_list_item">
+                        <a class="menu_list_link" href="#">Акции</a>
+                    </li>
+                    <li class="menu_list_item">
+                        <a class="menu_list_link" href="#">Врачи</a>
+                    </li>
+                    <li class="menu_list_item">
+                        <a class="menu_list_link" href="#">Отзывы</a>
+                    </li>
+                    <li class="menu_list_item">
+                        <a class="menu_list_link" href="#">Контакты</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <a class="phone" href="tel:+4565779867">+45 65 77 98 67</a>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="reviews">
+            <h3>Отзывы стоматологии "Искренняя улыбка"</h3>
+            <div class="container reviews_inner">
+                <div class="reviews_content">
+                    <p class="reviews_name">Виктория Отева (19.11.2024)</p>
+                    <p class="reviews_text section_text">Сегодня с ребенком посетили 9 стоматологию, нам нужно было
+                        вырвать корень зуба. Нашим врачом был Магасумов Эмиль Рамилевич, отличный хирург, дочь даже не
+                        заметила как ей удалил зубик. До этого ходили в разные стоматологии и она не давалась, а здесь
+                        врач нашел к ней сразу же подход! Спасибо большое! Всем рекомендую!</p>
+                    <p>Врач:</p>
+                    <p class="reviews_name_doctors">Комаров Михаил Матвеевич</p>
+                </div>
+            </div>
+    
+            <!-- Форма для добавления комментария -->
+            <div class="reviews_form">
+                <h4>Оставить отзыв</h4>
+                <form id="commentForm">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="date">Дата:</label>
+                    <input type="date" id="date" name="date" required>
+    
+                    <label for="reviewText">Ваш отзыв:</label>
+                    <textarea id="reviewText" name="reviewText" rows="4" required></textarea>
+    
+                    <label for="doctorName">Врач:</label>
+                    <input type="text" id="doctorName" name="doctorName" required>
+    
+                    <button type="submit">Отправить отзыв</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+
+
+    <footer class="footer">
+        <div class="container footer_inner">
+            <a class="logo" href="#">
+                <img class="logo_img" src="images/logo2.png" alt="">
+            </a>
+            <nav class="menu footer_menu ">
+                <ul class="menu_list footer_menu_list ">
+                    <li class="menu_list_item">
+                        <a class="menu_list_link" href="#">Главная</a>
+                    </li>
+                    <li class="menu_list_item">
+                        <a class="menu_list_link" href="#">Услуги и цены</a>
+                    </li>
+                    <li class="menu_list_item">
+                        <a class="menu_list_link" href="#">Акции</a>
+                    </li>
+                    <li class="menu_list_item">
+                        <a class="menu_list_link" href="#">Врачи</a>
+                    </li>
+                    <li class="menu_list_item">
+                        <a class="menu_list_link" href="#">Отзывы</a>
+                    </li>
+                    <li class="menu_list_item">
+                        <a class="menu_list_link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="footer_contacts">
+                <a class="phone_footer" href="tel:+4565779867">+45 65 77 98 67</a>
+                <a class="email" href="mailto:sincereSmile@gmail.com">sincereSmile@gmail.com</a>
+                <ul class="container footer_social">
+                    <li class="footer_social_item"><a href="#" class="footer_social_link"><img src="images/whatsapp.png"
+                                alt="" class="footer_social_img"></a></li>
+
+                    <li class="footer_social_item"><a href="#" class="footer_social_link"><img src="images/vk.png"
+                                alt="" class="footer_social_img"></a> </li>
+
+                    <li class="footer_social_item"><a href="#" class="footer_social_link"><img
+                                src="images/instagram.png" alt="" class="footer_social_img"></a></li>
+                </ul>
+
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

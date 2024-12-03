@@ -1,0 +1,51 @@
+.footer {
+    padding-top: 40px;
+    padding-bottom: 35px;
+    background-color: white;
+}
+
+.footer_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer_contacts {
+    display: flex;
+    flex-direction: column;
+width: 100%;
+text-align: center;
+}
+
+
+.footer_social_img {
+    width: 30px;
+    height: 30px;
+margin-top:  30px; ;
+
+}
+.footer_social_img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+.footer_social {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+}
+
+.phone_footer:hover {
+    color: orange; 
+
+}
+.email{
+    padding-top: 20px;
+}
+
+
+.email:hover {
+    color: orange; 
+
+}

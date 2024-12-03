@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-color: #fff8f3;
+    text-align: center;
+}
+
+p, h3, h4, label {
+    color: #333;
+}
+
+p {
+    font-size: 25px;
+    text-align: left;
+}
+
+h3 {
+    color: #333;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.reviews {
+    padding: 40px 0 150px;
+}
+
+.reviews_inner {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px ;
+    margin-bottom: 250px;
+}
+
+.reviews_name {
+    font-weight: bold;
+}
+
+.reviews_text {
+    margin: 5px 0;
+}
+
+.reviews_name_doctors {
+    font-style: italic;
+    color: darkslategray;
+}
+
+.reviews_form {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f3dfd8;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.reviews_form h4 {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.reviews_form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.reviews_form input,
+.reviews_form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+.reviews_form button {
+    padding: 18px 54px;
+    background-color: #ddb7ab;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 50px;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(65, 132, 144, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.reviews_form button:hover {
+    background-color: #c49488; 
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        padding: 15px; 
+    }
+
+    .reviews h3 {
+        font-size: 20px; 
+    }
+
+    .reviews_text {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .reviews {
+        padding: 10px; 
+    }
+
+    .reviews h3 {
+        font-size: 18px; 
+    }
+
+    .reviews_text {
+        font-size: 12px; 
+    }
+}
